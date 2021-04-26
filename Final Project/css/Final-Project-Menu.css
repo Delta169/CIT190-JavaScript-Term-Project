@@ -1,0 +1,83 @@
+body {
+	font-family: 'Bungee Inline', cursive;
+	font-size: 18px; 
+	line-height: 24px;
+	margin:0;
+	padding:0;
+    border:0;
+    background-image: url('../media/background-image-optimized.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #336ca7;
+}
+h1 {
+  font: 400 3.5em/125% Helvetica, Sans-serif;
+  color:  rgb(130, 195, 238);
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+  text-align:center;
+  z-index:3;
+  font-family: 'Bungee Inline', cursive;
+}
+nav {
+	margin:50px auto; 
+    text-align: center;
+    flex-wrap:wrap;
+}
+nav ul {
+    background: linear-gradient(0deg, rgb(130, 195, 238),black,  rgb(130, 195, 238)); 
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	color:rgb(255, 255, 255);
+	font-weight:900;
+	width:100%;
+	display:inline-table;
+}
+nav ul li {
+	display:inline-table;
+}
+nav ul li a {
+	display: block; 
+	padding: 25px 40px;
+	color:#808080; 
+	text-decoration: none;
+}
+nav ul li:hover {
+    background: linear-gradient(180deg, rgb(130, 195, 238),black,  rgb(130, 195, 238)); 
+}
+nav ul li:hover a {
+	color:rgb(0, 128, 122);
+}
+nav ul li:hover > ul {
+	display:flex;
+	flex-direction:column;
+	width:30%;
+}
+	
+nav ul ul {
+    display: none;
+    background: linear-gradient(180deg, rgb(130, 195, 238),black,  rgb(130, 195, 238)); 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	z-index:10;
+}
+nav ul ul li {
+	display:block; 
+	border-top: 1px solid #7575757c;
+	border-bottom: 1px solid #757575; 
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #757575;
+}	
+nav ul ul li a:hover {
+	background: rgb(255, 255, 255);
+	color:violet;
+}
+footer{
+	margin-top: 200px;
+}
